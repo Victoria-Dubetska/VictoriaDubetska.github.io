@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="j\jquery.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+		$("#thumbnail li a").click(function(){
+		$("#large img").hide().attr({"src": $(this).attr("href"), "title": $("> img", this).attr("title")});
+		$("#large h2").html($("> img", this).attr("title"));
+		return false;
+		});
+		$("#large>img").load(function(){$("#large>img:hidden").fadeIn("slow")});
+		});
+</script>
+
+</head>
+<body background=#009900>
+	<div class="fotka">
+		<img src="img/vsi_1.jpg" alt="" />
+	</div>
+	<ul class="albom">
+		<li><a href="img/Profile_Elsa_Frozen_II_%25282019%2529.jpg"><img src="img/Profile_Elsa_Frozen_II_%25282019%2529.jpg"/></a></li>
+		<li><a href="img/elza_nortuldra_fotoshop_kartinki01.jpg"><img src="img/elza_nortuldra_fotoshop_kartinki01.jpg"/></a></li>
+		<li><a href="img/elsssaaaa.jpg"><img src="img/elsssaaaa.jpg"/></a></li>
+		<li><a href="img/Profile_Anna_Frozen_II_%25282019%2529.jpg"><img src="img/Profile_Anna_Frozen_II_%25282019%2529.jpg"/></a></li>
+		<li><a href="img/an.jpg"><img src="img/an.jpg"/></a></li>
+		<li><a href="img/j,sqvb4.jpg"><img src="img/j,sqvb4.jpg"/></a></li>
+	</ul>
+</body>
+</html>
